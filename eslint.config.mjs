@@ -7,13 +7,13 @@ import tseslint from 'typescript-eslint';
 export default tseslint.config(
   {
     ignores: [
-  'eslint.config.mjs',
-  'commitlint.config.mjs',
-  'dist',
-  'drizzle',
-  'coverage',
-  'node_modules',
-],
+      'eslint.config.mjs',
+      'commitlint.config.mjs',
+      'dist',
+      'drizzle',
+      'coverage',
+      'node_modules',
+    ],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
@@ -41,13 +41,15 @@ export default tseslint.config(
   {
     files: ['src/**/*.ts'],
     ignores: [
-  'eslint.config.mjs',
-  'commitlint.config.mjs',
-  'dist',
-  'drizzle',
-  'coverage',
-  'node_modules',
-],
+      'src/database/**',
+      '**/*.repository.ts',
+      'eslint.config.mjs',
+      'commitlint.config.mjs',
+      'dist',
+      'drizzle',
+      'coverage',
+      'node_modules',
+    ],
     rules: {
       'no-restricted-imports': 'off',
       '@typescript-eslint/no-restricted-imports': [
